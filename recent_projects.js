@@ -62,8 +62,17 @@ function loadProjects() {
 
 // Load initial projects when page loads
 document.addEventListener('DOMContentLoaded', function() {
+  console.log("Page loaded. Initializing projects...");
+
   loadProjects(); // Load the first project
 
+  // Ensure button is visible when page loads
+  document.getElementById('load-more-btn').style.display = 'block'; 
+
   // Event listener for "Load More" button
-  document.getElementById('load-more-btn').addEventListener('click', loadProjects);
+  document.getElementById('load-more-btn').addEventListener('click', function() {
+    console.log("Load More button clicked");
+    loadProjects();
+  });
 });
+
