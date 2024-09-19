@@ -5,7 +5,84 @@
 <meta content="width=device-width initial-scale=1" name="viewport"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>
+        // Array of projects with dates
+        const projects = [
+          {
+            title: "Poker Wizard VisionOS",
+            description: "Created a VR project for Apple Vision Pro; received 33 downloads & 5-star reviews on the Apple Store.",
+            tools: "Swift, VisionOS",
+            link: "https://apps.apple.com/us/app/poker-wizards/id6642685724?platform=vision",
+            date: "September 2024"
+          },
+          {
+            title: "Mychef",
+            description: "Created a personalized meal delivery app using React.js; won the Most Innovative Idea Award.",
+            tools: "React.js, Node.js",
+            link: "https://devpost.com/software/mychef-yo1d4j",
+            date: "March 2022"
+          }
+        ];
+
+        // Sort projects by date in descending order
+        projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Global variables to track which projects are currently displayed
+        let displayedProjects = 0; // Start by displaying the most recent project
+        const projectsToShow = 1; // Number of projects to load per click
+
+        // Function to create project HTML
+        function createProjectHTML(project) {
+          return `
+            <div class="card medium">
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">${project.title}</span>
+                <p>${project.description}</p>
+                <p><strong>Completed:</strong> ${project.date}</p>
+                <ul>
+                  <li>Tools: ${project.tools}</li>
+                </ul>
+                <div class="card-action">
+                  <a href="${project.link}" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+
+        // Function to load projects
+        function loadProjects() {
+          const container = document.getElementById('projects-container');
+          const end = displayedProjects + projectsToShow;
+          for (let i = displayedProjects; i < end && i < projects.length; i++) {
+            container.innerHTML += createProjectHTML(projects[i]);
+          }
+          displayedProjects = end;
+          
+          // Hide "Load More" button if no more projects to load
+          if (displayedProjects >= projects.length) {
+            document.getElementById('load-more-btn').style.display = 'none';
+          }
+        }
+
+        // Load initial projects when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+          console.log("Page loaded. Initializing projects...");
+
+          loadProjects(); // Load the first project
+
+          // Ensure button is visible when page loads
+          document.getElementById('load-more-btn').style.display = 'block'; 
+
+          // Event listener for "Load More" button
+          document.getElementById('load-more-btn').addEventListener('click', function() {
+            console.log("Load More button clicked");
+            loadProjects();
+          });
+        });
+      </script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -21,6 +98,83 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
 <script>
+        // Array of projects with dates
+        const projects = [
+          {
+            title: "Poker Wizard VisionOS",
+            description: "Created a VR project for Apple Vision Pro; received 33 downloads & 5-star reviews on the Apple Store.",
+            tools: "Swift, VisionOS",
+            link: "https://apps.apple.com/us/app/poker-wizards/id6642685724?platform=vision",
+            date: "September 2024"
+          },
+          {
+            title: "Mychef",
+            description: "Created a personalized meal delivery app using React.js; won the Most Innovative Idea Award.",
+            tools: "React.js, Node.js",
+            link: "https://devpost.com/software/mychef-yo1d4j",
+            date: "March 2022"
+          }
+        ];
+
+        // Sort projects by date in descending order
+        projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Global variables to track which projects are currently displayed
+        let displayedProjects = 0; // Start by displaying the most recent project
+        const projectsToShow = 1; // Number of projects to load per click
+
+        // Function to create project HTML
+        function createProjectHTML(project) {
+          return `
+            <div class="card medium">
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">${project.title}</span>
+                <p>${project.description}</p>
+                <p><strong>Completed:</strong> ${project.date}</p>
+                <ul>
+                  <li>Tools: ${project.tools}</li>
+                </ul>
+                <div class="card-action">
+                  <a href="${project.link}" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+
+        // Function to load projects
+        function loadProjects() {
+          const container = document.getElementById('projects-container');
+          const end = displayedProjects + projectsToShow;
+          for (let i = displayedProjects; i < end && i < projects.length; i++) {
+            container.innerHTML += createProjectHTML(projects[i]);
+          }
+          displayedProjects = end;
+          
+          // Hide "Load More" button if no more projects to load
+          if (displayedProjects >= projects.length) {
+            document.getElementById('load-more-btn').style.display = 'none';
+          }
+        }
+
+        // Load initial projects when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+          console.log("Page loaded. Initializing projects...");
+
+          loadProjects(); // Load the first project
+
+          // Ensure button is visible when page loads
+          document.getElementById('load-more-btn').style.display = 'block'; 
+
+          // Event listener for "Load More" button
+          document.getElementById('load-more-btn').addEventListener('click', function() {
+            console.log("Load More button clicked");
+            loadProjects();
+          });
+        });
+      </script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -339,7 +493,12 @@
 </section>
 
 <!-- Recent Projects Section -->
-<section id="recent-projects" class="section scrollspy">
+
+    <section id="projects" class="section scrollspy">
+    <h3 class="page-title white-text teal">Projects</h3>
+    <div id="projects-container"></div>
+    <button id="load-more-btn" class="btn waves-effect waves-light blue-grey">Load More</button>
+    
   <h3 class="page-title white-text teal">Recent Projects</h3>
   <div id="projects-container"></div>
   <button id="load-more-btn" class="btn waves-effect waves-light blue-grey">Load More</button>
@@ -441,6 +600,39 @@
 </div>
 </div>
 </div>
+<!-- certifications -->
+<!-- <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Certificates</h4>
+            <div class="row text-left">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Algorithms (Stanford)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
 </div>
 </section>
 
@@ -510,6 +702,83 @@
 </main>
 
 <script>
+        // Array of projects with dates
+        const projects = [
+          {
+            title: "Poker Wizard VisionOS",
+            description: "Created a VR project for Apple Vision Pro; received 33 downloads & 5-star reviews on the Apple Store.",
+            tools: "Swift, VisionOS",
+            link: "https://apps.apple.com/us/app/poker-wizards/id6642685724?platform=vision",
+            date: "September 2024"
+          },
+          {
+            title: "Mychef",
+            description: "Created a personalized meal delivery app using React.js; won the Most Innovative Idea Award.",
+            tools: "React.js, Node.js",
+            link: "https://devpost.com/software/mychef-yo1d4j",
+            date: "March 2022"
+          }
+        ];
+
+        // Sort projects by date in descending order
+        projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Global variables to track which projects are currently displayed
+        let displayedProjects = 0; // Start by displaying the most recent project
+        const projectsToShow = 1; // Number of projects to load per click
+
+        // Function to create project HTML
+        function createProjectHTML(project) {
+          return `
+            <div class="card medium">
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">${project.title}</span>
+                <p>${project.description}</p>
+                <p><strong>Completed:</strong> ${project.date}</p>
+                <ul>
+                  <li>Tools: ${project.tools}</li>
+                </ul>
+                <div class="card-action">
+                  <a href="${project.link}" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+
+        // Function to load projects
+        function loadProjects() {
+          const container = document.getElementById('projects-container');
+          const end = displayedProjects + projectsToShow;
+          for (let i = displayedProjects; i < end && i < projects.length; i++) {
+            container.innerHTML += createProjectHTML(projects[i]);
+          }
+          displayedProjects = end;
+          
+          // Hide "Load More" button if no more projects to load
+          if (displayedProjects >= projects.length) {
+            document.getElementById('load-more-btn').style.display = 'none';
+          }
+        }
+
+        // Load initial projects when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+          console.log("Page loaded. Initializing projects...");
+
+          loadProjects(); // Load the first project
+
+          // Ensure button is visible when page loads
+          document.getElementById('load-more-btn').style.display = 'block'; 
+
+          // Event listener for "Load More" button
+          document.getElementById('load-more-btn').addEventListener('click', function() {
+            console.log("Load More button clicked");
+            loadProjects();
+          });
+        });
+      </script>
         // Array of projects
         const projects = [
           {
@@ -539,7 +808,6 @@
         // Function to create project HTML
         function createProjectHTML(project) {
           return `
-          <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">${project.title}</span>
@@ -553,7 +821,6 @@
                   </a>
                 </div>
               </div>
-            </div>
             </div>
           `;
         }
@@ -605,6 +872,83 @@
 <!-- Materialize - Compiled and minified JavaScript-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 <script>
+        // Array of projects with dates
+        const projects = [
+          {
+            title: "Poker Wizard VisionOS",
+            description: "Created a VR project for Apple Vision Pro; received 33 downloads & 5-star reviews on the Apple Store.",
+            tools: "Swift, VisionOS",
+            link: "https://apps.apple.com/us/app/poker-wizards/id6642685724?platform=vision",
+            date: "September 2024"
+          },
+          {
+            title: "Mychef",
+            description: "Created a personalized meal delivery app using React.js; won the Most Innovative Idea Award.",
+            tools: "React.js, Node.js",
+            link: "https://devpost.com/software/mychef-yo1d4j",
+            date: "March 2022"
+          }
+        ];
+
+        // Sort projects by date in descending order
+        projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Global variables to track which projects are currently displayed
+        let displayedProjects = 0; // Start by displaying the most recent project
+        const projectsToShow = 1; // Number of projects to load per click
+
+        // Function to create project HTML
+        function createProjectHTML(project) {
+          return `
+            <div class="card medium">
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">${project.title}</span>
+                <p>${project.description}</p>
+                <p><strong>Completed:</strong> ${project.date}</p>
+                <ul>
+                  <li>Tools: ${project.tools}</li>
+                </ul>
+                <div class="card-action">
+                  <a href="${project.link}" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+
+        // Function to load projects
+        function loadProjects() {
+          const container = document.getElementById('projects-container');
+          const end = displayedProjects + projectsToShow;
+          for (let i = displayedProjects; i < end && i < projects.length; i++) {
+            container.innerHTML += createProjectHTML(projects[i]);
+          }
+          displayedProjects = end;
+          
+          // Hide "Load More" button if no more projects to load
+          if (displayedProjects >= projects.length) {
+            document.getElementById('load-more-btn').style.display = 'none';
+          }
+        }
+
+        // Load initial projects when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+          console.log("Page loaded. Initializing projects...");
+
+          loadProjects(); // Load the first project
+
+          // Ensure button is visible when page loads
+          document.getElementById('load-more-btn').style.display = 'block'; 
+
+          // Event listener for "Load More" button
+          document.getElementById('load-more-btn').addEventListener('click', function() {
+            console.log("Load More button clicked");
+            loadProjects();
+          });
+        });
+      </script>
     // Materialize - Initializers
     $(document).ready(function () {
       $(".scrollspy").scrollSpy()
