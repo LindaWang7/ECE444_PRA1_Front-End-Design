@@ -15,6 +15,41 @@ Activity 1:
 </p>
 
 
+Activity 2:
+<p align="center"> 
+  <kbd>
+    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_1.png">
+  </a>
+  </kbd>
+</p>
+
+
+Activity 3:
+<p align="center"> 
+  <kbd>
+    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_1.png">
+  </a>
+  </kbd>
+</p>
+
+
+Activity 4:
+<p align="center"> 
+  <kbd>
+    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_1.png">
+  </a>
+  </kbd>
+</p>
+
+
+Activity 5:
+<p align="center"> 
+  <kbd>
+    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_1.png">
+  </a>
+  </kbd>
+</p>
+
 
 
 ### Website Preview
