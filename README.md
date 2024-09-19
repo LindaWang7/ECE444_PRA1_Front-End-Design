@@ -18,7 +18,10 @@ Activity 1:
 Activity 2:
 <p align="center"> 
   <kbd>
-    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_1.png">
+    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_2_web.png">
+  </a>
+
+  <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_2_repo.png">
   </a>
   </kbd>
 </p>
@@ -27,7 +30,10 @@ Activity 2:
 Activity 3:
 <p align="center"> 
   <kbd>
-    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_1.png">
+    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_3_web.png">
+  </a>
+
+  <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_3_repo.png">
   </a>
   </kbd>
 </p>
@@ -36,7 +42,10 @@ Activity 3:
 Activity 4:
 <p align="center"> 
   <kbd>
-    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_1.png">
+    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_4_web.png">
+  </a>
+
+  <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_4_repo.png">
   </a>
   </kbd>
 </p>
@@ -45,22 +54,17 @@ Activity 4:
 Activity 5:
 <p align="center"> 
   <kbd>
-    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_1.png">
+    <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_5_web_1.png">
+  </a>
+
+  <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_5_web_2.png">
+  </a>
+
+  <a href="https://github.com/LindaWang7/ECE444_PRA1_Front-End-Design" target="_blank"><img src="activity_screenshots/activity_5_repo.png">
   </a>
   </kbd>
 </p>
 
-
-
-### Website Preview
-<p align="center"> 
-  <kbd>
-    <a href="https://varadbhogayata.github.io" target="_blank"><img src="examples/preview.gif">
-  </a>
-  </kbd>
-</p>
-
-:star: Star me on GitHub — it helps!
 
 ## Features 📋
 ⚡️ Fully Responsive\
